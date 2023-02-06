@@ -1,0 +1,12 @@
+D:\AABM\6-2-2023\Examen2\bin\Debug\Examen2.exe.config
+D:\AABM\6-2-2023\Examen2\bin\Debug\Examen2.exe
+D:\AABM\6-2-2023\Examen2\bin\Debug\Examen2.pdb
+D:\AABM\6-2-2023\Examen2\obj\Debug\Examen2.csproj.AssemblyReference.cache
+D:\AABM\6-2-2023\Examen2\obj\Debug\Examen2.csproj.SuggestedBindingRedirects.cache
+D:\AABM\6-2-2023\Examen2\obj\Debug\Examen2.Form1.resources
+D:\AABM\6-2-2023\Examen2\obj\Debug\Examen2.Properties.Resources.resources
+D:\AABM\6-2-2023\Examen2\obj\Debug\Examen2.csproj.GenerateResource.cache
+D:\AABM\6-2-2023\Examen2\obj\Debug\Examen2.csproj.CoreCompileInputs.cache
+D:\AABM\6-2-2023\Examen2\obj\Debug\Examen2.exe
+D:\AABM\6-2-2023\Examen2\obj\Debug\Examen2.pdb
+D:\AABM\6-2-2023\Examen2\obj\Debug\Examen2.Form2.resources

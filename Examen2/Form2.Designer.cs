@@ -46,14 +46,10 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnAgregar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TablaEmpleado = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.BCod = new System.Windows.Forms.CheckBox();
-            this.Bname = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.busq = new System.Windows.Forms.TextBox();
-            this.Buscar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TablaEmpleado = new System.Windows.Forms.DataGridView();
+            this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,7 +58,13 @@
             this.Genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BCod = new System.Windows.Forms.CheckBox();
+            this.Bname = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.busq = new System.Windows.Forms.TextBox();
+            this.Buscar = new System.Windows.Forms.Button();
             this.chkEstado = new System.Windows.Forms.CheckBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TablaEmpleado)).BeginInit();
             this.SuspendLayout();
@@ -215,6 +217,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.btnAgregar);
@@ -239,34 +242,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Empleados";
             // 
-            // TablaEmpleado
-            // 
-            this.TablaEmpleado.AllowUserToOrderColumns = true;
-            this.TablaEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TablaEmpleado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre,
-            this.Apellido,
-            this.Cedula,
-            this.Puesto,
-            this.Codigo_Empleado,
-            this.Genero,
-            this.Cargo,
-            this.Estado});
-            this.TablaEmpleado.Location = new System.Drawing.Point(12, 199);
-            this.TablaEmpleado.Name = "TablaEmpleado";
-            this.TablaEmpleado.Size = new System.Drawing.Size(776, 150);
-            this.TablaEmpleado.TabIndex = 18;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(213, 134);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 13);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Estado";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -278,6 +253,81 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 20;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(213, 134);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Estado";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // TablaEmpleado
+            // 
+            this.TablaEmpleado.AllowUserToOrderColumns = true;
+            this.TablaEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TablaEmpleado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.N,
+            this.Nombre,
+            this.Apellido,
+            this.Cedula,
+            this.Puesto,
+            this.Codigo_Empleado,
+            this.Genero,
+            this.Cargo,
+            this.Estado});
+            this.TablaEmpleado.Location = new System.Drawing.Point(12, 199);
+            this.TablaEmpleado.Name = "TablaEmpleado";
+            this.TablaEmpleado.Size = new System.Drawing.Size(868, 150);
+            this.TablaEmpleado.TabIndex = 18;
+            // 
+            // N
+            // 
+            this.N.HeaderText = "N";
+            this.N.Name = "N";
+            this.N.Width = 25;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            // 
+            // Cedula
+            // 
+            this.Cedula.HeaderText = "Cedula";
+            this.Cedula.Name = "Cedula";
+            // 
+            // Puesto
+            // 
+            this.Puesto.HeaderText = "Puesto";
+            this.Puesto.Name = "Puesto";
+            // 
+            // Codigo_Empleado
+            // 
+            this.Codigo_Empleado.HeaderText = "Codigo_Empleado";
+            this.Codigo_Empleado.Name = "Codigo_Empleado";
+            // 
+            // Genero
+            // 
+            this.Genero.HeaderText = "Genero";
+            this.Genero.Name = "Genero";
+            // 
+            // Cargo
+            // 
+            this.Cargo.HeaderText = "Cargo";
+            this.Cargo.Name = "Cargo";
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
             // 
             // BCod
             // 
@@ -325,46 +375,6 @@
             this.Buscar.UseVisualStyleBackColor = true;
             this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
             // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.Name = "Apellido";
-            // 
-            // Cedula
-            // 
-            this.Cedula.HeaderText = "Cedula";
-            this.Cedula.Name = "Cedula";
-            // 
-            // Puesto
-            // 
-            this.Puesto.HeaderText = "Puesto";
-            this.Puesto.Name = "Puesto";
-            // 
-            // Codigo_Empleado
-            // 
-            this.Codigo_Empleado.HeaderText = "Codigo_Empleado";
-            this.Codigo_Empleado.Name = "Codigo_Empleado";
-            // 
-            // Genero
-            // 
-            this.Genero.HeaderText = "Genero";
-            this.Genero.Name = "Genero";
-            // 
-            // Cargo
-            // 
-            this.Cargo.HeaderText = "Cargo";
-            this.Cargo.Name = "Cargo";
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            // 
             // chkEstado
             // 
             this.chkEstado.AutoSize = true;
@@ -375,11 +385,21 @@
             this.chkEstado.Text = "Estado";
             this.chkEstado.UseVisualStyleBackColor = true;
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(442, 99);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 21;
+            this.btnEliminar.Text = "eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 450);
+            this.ClientSize = new System.Drawing.Size(941, 450);
             this.Controls.Add(this.chkEstado);
             this.Controls.Add(this.Buscar);
             this.Controls.Add(this.busq);
@@ -426,6 +446,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox busq;
         private System.Windows.Forms.Button Buscar;
+        private System.Windows.Forms.CheckBox chkEstado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn N;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cedula;
@@ -434,6 +456,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Genero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cargo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
-        private System.Windows.Forms.CheckBox chkEstado;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

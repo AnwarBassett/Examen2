@@ -25,7 +25,7 @@ namespace Examen2
             }
             else
             {
-                if (txtUser.Text == "F" && txtPassword.Text == "p")
+                if (txtUser.Text == "FullAdmin" && txtPassword.Text == "password*123")
                 {
                     MessageBox.Show("Datos correctos");
                     this.Hide();
